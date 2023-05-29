@@ -29,10 +29,10 @@ show_pages(pages)
 # model_filename = 'model/ensemble_model.pkl'
 # ensemble = load(model_filename)
 
-# Load the pre-trained SelectKBest model
-selector_filename = 'model/selectkbest.gz'
-with gzip.open(selector_filename, 'rb') as f:
-    selector = pickle.load(f)
+    # Load the pre-trained SelectKBest model
+selector_filename = 'model/selectkbest_model.pkl'
+selector = pickle.load(selector_filename)
+
 
 # Load the pre-trained ensemble model
 model_filename = 'model/ensemble.gz'
